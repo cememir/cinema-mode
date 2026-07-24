@@ -126,16 +126,17 @@ ile zaten iki dilli).
 - TR: `Kullanıcı kısayola bastığında ya da simgeye tıkladığında karartmayı o sekmede çizebilmek için gerekli. Yalnızca açık kullanıcı eylemiyle kullanılır.`
 
 **`scripting`**
-- EN: `Injects the content script into tabs that were opened before the extension was installed, so the toggle works without reloading the page.`
-- TR: `Eklenti kurulmadan önce açılmış sekmelere içerik betiğini enjekte eder; böylece sayfa yenilenmeden aç/kapat çalışır.`
+- EN: `Injects the overlay script into the active tab only when the user toggles the extension (toolbar click or keyboard shortcut). The script is never injected automatically.`
+- TR: `Karartma betiğini yalnızca kullanıcı eklentiyi açtığında (simge tıklaması veya klavye kısayolu) aktif sekmeye enjekte eder. Betik hiçbir zaman kendiliğinden enjekte edilmez.`
 
 **`storage`**
 - EN: `Stores two visual preferences (dimming level, padding) locally in chrome.storage.local. Nothing else is stored; nothing leaves the device.`
 - TR: `İki görsel tercihi (karartma, nefes payı) yerel chrome.storage.local'da saklar. Başka hiçbir şey saklanmaz; hiçbir veri cihazdan çıkmaz.`
 
-**Host permissions (`<all_urls>` content script)**
-- EN: `The reading-focus overlay must be available on any website the user reads. The content script is passive until the user activates it, reads no page data, and sends nothing anywhere.`
-- TR: `Odaklı okuma katmanı kullanıcının okuduğu her sitede çalışabilmelidir. İçerik betiği kullanıcı etkinleştirene kadar pasiftir, sayfa verisi okumaz ve hiçbir yere veri göndermez.`
+**Host permissions**
+- **Yok.** Manifest'te `host_permissions` ve `content_scripts` bulunmaz; erişim
+  yalnızca `activeTab` üzerinden, kullanıcı hareketiyle sağlanır. Form bu alanı
+  sormayacak — "Geniş Ana Makine İzinleri" uyarısı bu sayede oluşmaz.
 
 ### Remote code / Uzaktan kod
 

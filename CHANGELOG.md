@@ -20,3 +20,7 @@ Version format / Sürüm formatı: `YYYYMMDD.HHMMSS` (manifest: `YYYY.M.D.HHMM`)
 
 ### Changed / Değişti
 - Shortcut `Alt+Shift+O` → `Alt+Shift+S` (one-hand cluster / tek elle basılır)
+- Overlay script is now injected on demand via `activeTab` — no `content_scripts`,
+  no broad host permissions, faster Web Store review
+  / Karartma betiği artık `activeTab` ile talep anında enjekte ediliyor —
+  `content_scripts` ve geniş host izni yok, mağaza incelemesi hızlanır

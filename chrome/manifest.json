@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "__MSG_extName__",
-  "version": "2026.7.24.1036",
-  "version_name": "20260724.103607",
+  "version": "2026.7.24.1058",
+  "version_name": "20260724.105801",
   "description": "__MSG_extDesc__",
   "default_locale": "tr",
   "permissions": [
@@ -40,17 +40,5 @@
       },
       "description": "__MSG_cmdToggle__"
     }
-  },
-  "content_scripts": [
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "js": [
-        "content.js"
-      ],
-      "run_at": "document_idle",
-      "all_frames": false
-    }
-  ]
+  }
 }
