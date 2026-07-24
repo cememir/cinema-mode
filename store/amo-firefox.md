@@ -16,6 +16,16 @@
 
 ---
 
+### "Do you need to submit source code?" / Kaynak kodu gerekli mi?
+
+**Hayır (No)** işaretle. Gerekçe: pakette küçültücü, kod üreteci, bundler
+(webpack vb.) veya şablon motoru kullanılmıyor — tüm JS/HTML elle yazılmış
+düz kod olarak zip'e giriyor; `build.sh` yalnızca sürüm damgalar ve zip'ler.
+(`scripts/make_store_assets.py` sadece mağaza PNG'lerini üretir; koda dahil
+edilen dosya üretmez.) Zip'teki kod = kaynak kod.
+
+---
+
 ## 2) Describe Add-on (Tanım)
 
 ### Name / Ad
