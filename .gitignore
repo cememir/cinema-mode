@@ -1,0 +1,19 @@
+# IDE
+.idea/
+.vscode/
+
+# Paket çıktıları
+dist/
+*.zip
+
+# İşletim sistemi
+.DS_Store
+Thumbs.db
+
+# Gizli dosyalar
+.env
+.env.*
+.mcp.json
+*.key
+*.pem
+secrets/
