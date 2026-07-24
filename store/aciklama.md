@@ -176,3 +176,8 @@ bash scripts/build.sh
 
 Firefox (addons.mozilla.org) için aynı metinler kullanılabilir;
 paket: `dist/cinema-mode-firefox-<damga>.zip`.
+
+AMO veri toplama beyanı manifest'te gömülü:
+`browser_specific_settings.gecko.data_collection_permissions.required = ["none"]`
+— kurulum ekranında "No data collected" rozeti gösterilir; formda ayrıca
+veri kategorisi seçme (hiçbiri) dışında işlem gerekmez.
