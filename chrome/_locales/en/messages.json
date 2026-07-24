@@ -1,0 +1,18 @@
+{
+  "extName": {
+    "message": "Cinema Mode",
+    "description": "Extension name"
+  },
+  "extDesc": {
+    "message": "Keeps the area you click on stage and dims the rest of the page. For focused reading.",
+    "description": "Extension description"
+  },
+  "actionTitle": {
+    "message": "Cinema Mode (Alt+Shift+S)",
+    "description": "Toolbar icon title"
+  },
+  "cmdToggle": {
+    "message": "Toggle cinema mode",
+    "description": "Keyboard shortcut description"
+  }
+}

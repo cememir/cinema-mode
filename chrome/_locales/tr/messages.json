@@ -1,0 +1,18 @@
+{
+  "extName": {
+    "message": "Sinema Modu",
+    "description": "Eklenti adı"
+  },
+  "extDesc": {
+    "message": "Tıkladığın alanı sahnede bırakır, sayfanın geri kalanını karartır. Odaklı okuma için.",
+    "description": "Eklenti açıklaması"
+  },
+  "actionTitle": {
+    "message": "Sinema Modu (Alt+Shift+S)",
+    "description": "Araç çubuğu simgesi başlığı"
+  },
+  "cmdToggle": {
+    "message": "Sinema modunu aç / kapat",
+    "description": "Klavye kısayolu açıklaması"
+  }
+}
