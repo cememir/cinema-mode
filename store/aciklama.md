@@ -1,42 +1,28 @@
-# Chrome Web Store Mağaza Metinleri
+# Chrome Web Store — Başvuru Formu Metinleri
 
-> Bu dosya mağazaya yüklenmez; başvuru formunu doldururken kopyala-yapıştır kaynağıdır.
+> Bu dosya mağazaya yüklenmez; Developer Dashboard'daki her alanı doldururken
+> kopyala-yapıştır kaynağıdır. Görseller: `store/assets/` (üretici:
+> `python3 scripts/make_store_assets.py`). Paket: `bash scripts/build.sh`.
 
-## Kısa açıklama (max 132 karakter)
+---
 
-**TR:** Tıkladığın alanı sahnede bırakır, sayfanın geri kalanını karartır. Odaklı okuma için.
+## 1) Store listing (Mağaza kaydı)
 
-**EN:** Keeps the area you click on stage and dims the rest of the page. For focused reading.
+### Ürün adı / Product name
 
-## Uzun açıklama — Türkçe
+- **English (varsayılan):** Cinema Mode
+- **Türkçe:** Sinema Modu
 
-Sinema Modu, kalabalık web sayfalarında yalnızca okuduğun bölüme odaklanmanı sağlar.
+### Özet / Summary — max 132 karakter
 
-Alt+Shift+S'ya bas, sayfada okumak istediğin alana tıkla — o alan aydınlık "sahnede" kalır, geri kalan her şey kararır. Reklamlar, kenar çubukları, öneri kutuları karanlığa gömülür.
+- **EN** (89): `Keeps the area you click on stage and dims the rest of the page. For focused reading.`
+- **TR** (91): `Tıkladığın alanı sahnede bırakır, sayfanın geri kalanını karartır. Odaklı okuma için.`
 
-ÖZELLİKLER
+### Açıklama / Description
 
-• Canlı önizleme: imlecini gezdirdikçe hangi bloğun seçileceğini anında görürsün
-• Aydınlık alan tamamen canlı: metin seçebilir, linke tıklayabilir, video izleyebilirsin
-• Karanlık alandaki tıklamalar sayfaya geçmez — dikkat dağılmaz
-• Kaydırdıkça karartma seçili bloğu takip eder
-• W/S ile alanı büyüt/küçült, Q/E ile karartmayı ayarla, C ile ortala
-• Ayarların hatırlanır; ayarlar sayfasından da değiştirilebilir
-• Tamamen çevrimdışı çalışır: veri toplamaz, ağ isteği yapmaz, reklam ve izleme yoktur
+**English:**
 
-KISAYOLLAR
-
-• Alt+Shift+S — aç / kapat
-• W / S — alanı genişlet / daralt
-• Q / E — karartmayı koyulaştır / aç
-• R veya karanlığa tıklama — yeni alan seç
-• C — seçili alanı ortala
-• , / . — nefes payını azalt / artır
-• H — ipucu çubuğunu gizle
-• Esc veya sağ tık — çık
-
-## Uzun açıklama — English
-
+```
 Cinema Mode helps you focus on just the part of a busy web page you are actually reading.
 
 Press Alt+Shift+S, click the area you want to read — that area stays lit "on stage" while everything else fades to black. Ads, sidebars and recommendation boxes disappear into the dark.
@@ -62,27 +48,130 @@ SHORTCUTS
 • H — hide the hint bar
 • Esc or right-click — exit
 
-## Kategori
+Open source, MIT licensed. Also available for Firefox.
+```
 
-Productivity / Verimlilik — Accessibility de uygun ikinci seçenek.
+**Türkçe:**
 
-## Görsel varlık listesi (başvuru öncesi hazırla)
+```
+Sinema Modu, kalabalık web sayfalarında yalnızca okuduğun bölüme odaklanmanı sağlar.
 
-| Varlık | Boyut | Durum |
+Alt+Shift+S'ye bas, sayfada okumak istediğin alana tıkla — o alan aydınlık "sahnede" kalır, geri kalan her şey kararır. Reklamlar, kenar çubukları, öneri kutuları karanlığa gömülür.
+
+ÖZELLİKLER
+
+• Canlı önizleme: imlecini gezdirdikçe hangi bloğun seçileceğini anında görürsün
+• Aydınlık alan tamamen canlı: metin seçebilir, linke tıklayabilir, video izleyebilirsin
+• Karanlık alandaki tıklamalar sayfaya geçmez — dikkat dağılmaz
+• Kaydırdıkça karartma seçili bloğu takip eder
+• W/S ile alanı büyüt/küçült, Q/E ile karartmayı ayarla, C ile ortala
+• Ayarların hatırlanır; ayarlar sayfasından da değiştirilebilir
+• Tamamen çevrimdışı çalışır: veri toplamaz, ağ isteği yapmaz, reklam ve izleme yoktur
+
+KISAYOLLAR
+
+• Alt+Shift+S — aç / kapat
+• W / S — alanı genişlet / daralt
+• Q / E — karartmayı koyulaştır / aç
+• R veya karanlığa tıklama — yeni alan seç
+• C — seçili alanı ortala
+• , / . — nefes payını azalt / artır
+• H — ipucu çubuğunu gizle
+• Esc veya sağ tık — çık
+
+Açık kaynak, MIT lisanslı. Firefox için de mevcut.
+```
+
+### Kategori / Category
+
+**Productivity → Tools** (alternatif: Accessibility)
+
+### Dil / Language
+
+Varsayılan **English**; ek yerelleştirme **Türkçe** (eklenti arayüzü `_locales`
+ile zaten iki dilli).
+
+### Grafik varlıklar / Graphic assets
+
+| Alan | Boyut | Dosya |
 |---|---|---|
-| Mağaza ikonu | 128×128 PNG | ✅ `icons/icon128.png` |
-| Ekran görüntüsü (1–5 adet) | 1280×800 veya 640×400 | ⬜ çekilecek |
-| Küçük promo karosu (opsiyonel) | 440×280 | ⬜ |
-| Marquee promo (opsiyonel) | 1400×560 | ⬜ |
+| Store icon | 128×128 | `chrome/icons/icon128.png` |
+| Screenshot 1 — odak modu | 1280×800 | `store/assets/screenshot-1-focus-1280x800.png` |
+| Screenshot 2 — seçim modu | 1280×800 | `store/assets/screenshot-2-picking-1280x800.png` |
+| Screenshot 3 — ayarlar | 1280×800 | `store/assets/screenshot-3-options-1280x800.png` |
+| Small promo tile | 440×280 | `store/assets/promo-small-440x280.png` |
+| Marquee promo tile | 1400×560 | `store/assets/promo-marquee-1400x560.png` |
 
-Ekran görüntüsü önerisi: bir haber sitesinde (1) seçim modu canlı önizleme,
-(2) odak modu + HUD, (3) ayarlar sayfası.
+> Not: Yayına almadan önce ekran görüntülerini gerçek yakalamalarla değiştirmek
+> incelemede avantajdır; mevcut görseller ürün arayüzünün birebir stilize halidir.
 
-## Başvuru notları
+### Ek alanlar / Additional fields
 
-- **Gizlilik politikası:** depoda `PRIVACY.md` — herkese açık bir URL'de yayınla
-  (GitHub repo linki yeterli) ve formda o URL'yi ver.
-- **İzin gerekçeleri** formda sorulur; `PRIVACY.md` içindeki tablodan kopyala.
-- **Tek amaç (single purpose) açıklaması:** "Sayfanın seçilen bölümü dışını
-  karartarak odaklı okuma sağlamak."
-- Paket: `bash scripts/build.sh` → `dist/cinema-mode-{chrome,firefox}-<damga>.zip`
+- **Homepage URL:** https://github.com/cememir/cinema-mode *(repo private olduğu sürece boş bırak)*
+- **Support email:** cememir2017@gmail.com
+
+---
+
+## 2) Privacy (Gizlilik sekmesi)
+
+### Single purpose description / Tek amaç açıklaması
+
+- **EN:** `Dims everything on the page except the user-selected area, to enable distraction-free reading.`
+- **TR:** `Sayfada kullanıcının seçtiği alan dışındaki her şeyi karartarak dikkat dağıtmayan okuma sağlar.`
+
+### Permission justifications / İzin gerekçeleri
+
+**`activeTab`**
+- EN: `Needed to apply the dimming overlay in the tab where the user presses the shortcut or clicks the toolbar icon. Used only on explicit user action.`
+- TR: `Kullanıcı kısayola bastığında ya da simgeye tıkladığında karartmayı o sekmede çizebilmek için gerekli. Yalnızca açık kullanıcı eylemiyle kullanılır.`
+
+**`scripting`**
+- EN: `Injects the content script into tabs that were opened before the extension was installed, so the toggle works without reloading the page.`
+- TR: `Eklenti kurulmadan önce açılmış sekmelere içerik betiğini enjekte eder; böylece sayfa yenilenmeden aç/kapat çalışır.`
+
+**`storage`**
+- EN: `Stores two visual preferences (dimming level, padding) locally in chrome.storage.local. Nothing else is stored; nothing leaves the device.`
+- TR: `İki görsel tercihi (karartma, nefes payı) yerel chrome.storage.local'da saklar. Başka hiçbir şey saklanmaz; hiçbir veri cihazdan çıkmaz.`
+
+**Host permissions (`<all_urls>` content script)**
+- EN: `The reading-focus overlay must be available on any website the user reads. The content script is passive until the user activates it, reads no page data, and sends nothing anywhere.`
+- TR: `Odaklı okuma katmanı kullanıcının okuduğu her sitede çalışabilmelidir. İçerik betiği kullanıcı etkinleştirene kadar pasiftir, sayfa verisi okumaz ve hiçbir yere veri göndermez.`
+
+### Remote code / Uzaktan kod
+
+**No, I am not using remote code.** — Tüm kod pakete dahildir; CDN, eval veya
+harici script yoktur.
+
+### Data usage / Veri kullanımı
+
+Hiçbir veri türü toplanmıyor — formdaki **tüm veri kategorilerini boş bırak** ve
+üç beyanı işaretle:
+
+- ✅ I do not sell or transfer user data to third parties, outside of the approved use cases
+- ✅ I do not use or transfer user data for purposes that are unrelated to my item's single purpose
+- ✅ I do not use or transfer user data to determine creditworthiness or for lending purposes
+
+### Privacy policy URL
+
+`PRIVACY.md` herkese açık bir adreste yayınlanmalı (repo public yapılınca):
+`https://github.com/cememir/cinema-mode/blob/main/PRIVACY.md`
+
+---
+
+## 3) Distribution (Dağıtım sekmesi)
+
+- **Visibility:** Public
+- **Distribution:** All regions
+- **Pricing:** Free
+
+---
+
+## 4) Yükleme / Upload
+
+```bash
+bash scripts/build.sh
+# → dist/cinema-mode-chrome-<damga>.zip  → Dashboard'a bu dosya yüklenir
+```
+
+Firefox (addons.mozilla.org) için aynı metinler kullanılabilir;
+paket: `dist/cinema-mode-firefox-<damga>.zip`.
