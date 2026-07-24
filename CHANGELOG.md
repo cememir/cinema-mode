@@ -2,6 +2,13 @@
 
 Version format / Sürüm formatı: `YYYYMMDD.HHMMSS` (manifest: `YYYY.M.D.HHMM`).
 
+## [20260724.114337] — 2026-07-24
+
+### Added / Eklendi
+- Chrome: right-click context menu item "Toggle Cinema Mode" (`contextMenus`
+  permission) / Chrome: sağ tuş menüsüne "Sinema Modu'nu aç / kapat" öğesi
+  (`contextMenus` izni)
+
 ## [20260724.103251] — 2026-07-24
 
 ### Added / Eklendi

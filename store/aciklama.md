@@ -133,6 +133,10 @@ ile zaten iki dilli).
 - EN: `Stores two visual preferences (dimming level, padding) locally in chrome.storage.local. Nothing else is stored; nothing leaves the device.`
 - TR: `İki görsel tercihi (karartma, nefes payı) yerel chrome.storage.local'da saklar. Başka hiçbir şey saklanmaz; hiçbir veri cihazdan çıkmaz.`
 
+**`contextMenus`**
+- EN: `Adds a single "Toggle Cinema Mode" item to the right-click menu as an alternative way to activate the extension. No page data is read through this menu.`
+- TR: `Sağ tuş menüsüne, eklentiyi açmanın alternatif bir yolu olarak tek bir "Sinema Modu'nu aç / kapat" öğesi ekler. Bu menü üzerinden hiçbir sayfa verisi okunmaz.`
+
 **Host permissions**
 - **Yok.** Manifest'te `host_permissions` ve `content_scripts` bulunmaz; erişim
   yalnızca `activeTab` üzerinden, kullanıcı hareketiyle sağlanır. Form bu alanı
