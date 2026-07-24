@@ -14,5 +14,9 @@
   "cmdToggle": {
     "message": "Toggle cinema mode",
     "description": "Keyboard shortcut description"
+  },
+  "menuToggle": {
+    "message": "Toggle Cinema Mode",
+    "description": "Context menu item"
   }
 }

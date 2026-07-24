@@ -38,3 +38,17 @@ browser.commands.onCommand.addListener(async (command) => {
   const [tab] = await browser.tabs.query({ active: true, currentWindow: true });
   toggle(tab);
 });
+
+// Sağ tuş menüsü — kurulumda bir kez oluşturulur.
+browser.runtime.onInstalled.addListener(() => {
+  browser.contextMenus.create({
+    id: "sinema-modu-toggle",
+    title: browser.i18n.getMessage("menuToggle"),
+    contexts: ["all"]
+  });
+});
+
+browser.contextMenus.onClicked.addListener((info, tab) => {
+  if (info.menuItemId !== "sinema-modu-toggle") return;
+  toggle(tab);
+});

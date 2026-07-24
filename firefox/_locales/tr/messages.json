@@ -14,5 +14,9 @@
   "cmdToggle": {
     "message": "Sinema modunu aç / kapat",
     "description": "Klavye kısayolu açıklaması"
+  },
+  "menuToggle": {
+    "message": "Sinema Modu'nu aç / kapat",
+    "description": "Sağ tuş menüsü öğesi"
   }
 }
